@@ -103,22 +103,13 @@ PostgreSQL     Redis
 
 ⸻
 
-👨‍💻 Author
-
-Prince Yadav
-Software Engineer | Backend & Systems
-
-Save → exit.
-
----
-
-## 3️⃣ Commit README
+ 3️⃣ Commit README
 
 ```bash
 git add README.md
 git commit -m "Finalize README with architecture and deployment details"
 git push
-
+```
 ---
 
 ## 🚀 Run Locally (Docker)
@@ -133,3 +124,11 @@ docker compose up -d
 ## 🐳 Local Development
 ```bash
 docker compose up --build
+
+```
+⸻
+
+## 🧑‍💻 Author
+
+Prince Yadav
+Software Engineer | FullStack Developer
