@@ -10,14 +10,10 @@ export class RedisService implements OnModuleDestroy {
     const host = process.env.REDIS_HOST || 'redis';
     const port = Number(process.env.REDIS_PORT || 6379);
 
-    this.client = new Redis({
-      host,
-      port,
-      maxRetriesPerRequest: 5, // 🔑 prevent crash loop
+    this.client = new Redis(process.env.REDIS_URL!, {
+      maxRetriesPerRequest: 5,
       enableReadyCheck: true,
-      retryStrategy(times) {
-        return Math.min(times * 200, 2000); // backoff
-      },
+      tls: {}, // REQUIRED for rediss://
     });
 
     this.client.on('connect', () => {
