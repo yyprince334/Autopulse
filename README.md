@@ -1,7 +1,3 @@
-# 🚀 AutoPulse
-
-AutoPulse is a full-stack uptime monitoring and alerting platform inspired by tools like UptimeRobot and StatusCake.
-
 # 🚀 AutoPulse — System Monitoring & Alerting Platform
 
 AutoPulse is a full-stack system monitoring platform inspired by tools like UptimeRobot and PagerDuty.
