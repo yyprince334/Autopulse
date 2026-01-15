@@ -41,7 +41,7 @@ async function bootstrap() {
 );
 
   app.enableCors({
-  origin: ['http://localhost:3001'],
+  origin: ['http://localhost:3001','https://autopulse-web.onrender.com'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
