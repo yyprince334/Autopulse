@@ -1,0 +1,1 @@
+ALTER TABLE "system" RENAME TO "systems";

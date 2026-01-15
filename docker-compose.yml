@@ -1,0 +1,76 @@
+version: "3.9"
+
+services:
+  # -------------------------
+  # PostgreSQL
+  # -------------------------
+  postgres:
+    image: postgres:16
+    container_name: autopulse_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: autopulse
+      POSTGRES_PASSWORD: autopulse
+      POSTGRES_DB: autopulse
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # -------------------------
+  # Redis
+  # -------------------------
+  redis:
+    image: redis:7
+    container_name: autopulse_redis
+    restart: always
+
+  # -------------------------
+  # Backend (NestJS API)
+  # -------------------------
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: autopulse_api
+    restart: always
+    env_file:
+      - ./apps/api/.env.docker
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "3000:3000"
+
+  # -------------------------
+  # Frontend (Next.js)
+  # -------------------------
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: autopulse_web
+    restart: always
+    env_file:
+      - ./apps/web/.env.docker
+    depends_on:
+      - api
+    ports:
+      - "3001:3001"
+
+  # -------------------------
+  # Agent (python)
+  # -------------------------
+  agent:
+    build:
+      context: ./apps/autopulse-agent
+      dockerfile: Dockerfile
+    container_name: autopulse_agent
+    restart: always
+    env_file:
+      - ./apps/autopulse-agent/.env
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:

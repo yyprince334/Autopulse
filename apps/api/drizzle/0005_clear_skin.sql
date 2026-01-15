@@ -1,0 +1,1 @@
+ALTER TABLE "systems" RENAME COLUMN "decription" TO "description";

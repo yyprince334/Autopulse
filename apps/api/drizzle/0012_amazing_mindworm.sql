@@ -1,0 +1,1 @@
+ALTER TABLE "alerts" ALTER COLUMN "started_at" SET NOT NULL;

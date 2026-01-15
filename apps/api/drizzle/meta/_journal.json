@@ -1,0 +1,125 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1767103611332,
+      "tag": "0000_freezing_green_goblin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1767117613783,
+      "tag": "0001_silky_prowler",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1767173628768,
+      "tag": "0002_cultured_green_goblin",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1767173654589,
+      "tag": "0003_foamy_masque",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1767173707900,
+      "tag": "0004_hard_omega_flight",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1767176517838,
+      "tag": "0005_clear_skin",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1767191280740,
+      "tag": "0006_superb_alice",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1767194380391,
+      "tag": "0007_brown_reavers",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1767549503875,
+      "tag": "0008_clumsy_selene",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1767803658990,
+      "tag": "0009_volatile_warlock",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1767807766714,
+      "tag": "0010_early_kinsey_walden",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1767807976156,
+      "tag": "0011_foamy_abomination",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1767808340424,
+      "tag": "0012_amazing_mindworm",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1767808369566,
+      "tag": "0013_wakeful_ultimatum",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1767808517210,
+      "tag": "0014_parallel_vulture",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1767809046311,
+      "tag": "0015_thick_strong_guy",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1768046182010,
+      "tag": "0016_pink_wolfsbane",
+      "breakpoints": true
+    }
+  ]
+}
